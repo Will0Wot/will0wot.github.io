@@ -1,19 +1,26 @@
-<h1 align="center">👋 Hi! I’m William</h1>
-<h3 align="center">I am pursuing a degree in Data Science at Simon Fraser University!</h3>
+# William Desa — Data Science Portfolio
 
-- **👀 Primary language:** I’m most proficient in Python but I am also able to work in many other languages
-- **🌱 Areas I want to develop:** I am looking to learn other coding languages and more about software development
-- **📫 You can reach me at:** willowot9@gmail.com
-- **🧑‍🏫 Something about me:** Filler
+This repository contains the source code for my personal portfolio website. The site highlights my
+experience, projects, and technical skills as I pursue data science opportunities.
 
-<h3 align="center">Check out this website! - https://sitereviewdesk.ai/</h3>
+## 🧭 Structure
 
-<h3 align="left">My LinkedIn:</h3>
-<p align="left">
+- `index.html` – semantic HTML layout that powers the single-page portfolio experience.
+- `styles.css` – responsive styling with a dark, data-inspired visual theme.
+- `script.js` – lightweight JavaScript for interactive project filtering and navigation behavior.
 
-</p>
+## 🚀 Getting started
 
-<!---
-aaronn-lopez/aaronn-lopez is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+1. Clone the repository and open the project folder.
+2. Serve the site locally with your preferred static file server (for example `python -m http.server`).
+3. Navigate to `http://localhost:8000` to explore the portfolio.
+
+## 🌟 Features
+
+- Hero section highlighting contact details and resume-backed impact metrics.
+- Filterable project gallery covering machine learning, analytics, and data engineering initiatives.
+- Skills overview, experience timeline, and clear contact paths for recruiters and collaborators.
+- Accessible markup with skip navigation, keyboard-friendly menus, and responsive layouts.
+
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/william-desa) or
+[email](mailto:will@desa.info) if you would like to discuss collaboration opportunities.
