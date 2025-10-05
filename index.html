@@ -130,13 +130,14 @@
             <button class="filter-btn is-active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="ml">Machine Learning</button>
             <button class="filter-btn" data-filter="analytics">Analytics</button>
+            <button class="filter-btn" data-filter="se">Software Engineering</button>
           </div>
         </div>
         <div class="projects-grid" id="project-list" role="list">
     <article class="project tag-ml tag-analytics" role="listitem">
-      <h3>NBA MVP Prediction Model</h3>
+      <h3>NBA Matchup Prediction Engine</h3>
       <p>
-        Built an explainable NBA matchup prediction engine that transformed 971 player-game logs by summing 17 counting stats, averaging three shooting rates, and tracking rotation depth before training a logistic regression model to surface matchup win probabilities and auto-generate four narrative-ready visuals plus a sharable PDF story for stakeholders.
+        This project provides a small Python package for analysing NBA player game logs and building a matchup-level model that estimates the probability of a team winning against a specific opponent. The workflow extracts team strengths from player‑level statistics, trains a logistic regression model, and produces actionable insights about the most important matchup factors.
       </p>
       <ul class="project__meta">
         <li><strong>Stack:</strong> Python, pandas, scikit‑learn, PyTorch, NBA API, Kaggle, Power BI</li>
@@ -162,8 +163,8 @@
       </p>
     </article>
 
-    <article class="project" role="listitem">
-      <!-- Intentionally untagged (no tag-ml or tag-analytics) so this appears only under "All" and not under the Machine Learning filter. -->
+    <!-- Tagged as Software Engineering (tag-se) so it appears under "All" and "Software Engineering", but NOT under Machine Learning or Analytics. -->
+    <article class="project tag-se" role="listitem">
       <h3>Legend of Zelda: 2D Escape</h3>
       <p>
         Applied Scrum methodology and Object‑Oriented Design with UML; wrote unit and integration tests with JUnit and tracked issues in Jira;

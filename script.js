@@ -10,21 +10,21 @@ const projects = [
     }
   },
   {
-    title: 'NBA MVP Prediction Model',
+    title: 'NBA Matchup Prediction Engine',
     description:
-      'Engineered scikit-learn pipelines and Power BI visualizations to predict MVP candidates using historical box score data and efficiency metrics.',
-    tags: ['Pandas', 'PyTorch', 'NBA API', 'Scikit-Learn', 'PowerBI', 'Kaggle'],
+      'This project provides a small Python package for analysing NBA player game logs and building a matchup-level model that estimates the probability of a team winning against a specific opponent. The workflow extracts team strengths from player‑level statistics, trains a logistic regression model, and produces actionable insights about the most important matchup factors.',
+    tags: ['Pandas', 'Scikit-Learn', 'Matplotlib', 'NBA API'],
     focus: ['ml', 'analytics'],
     links: {
-      repo: 'https://github.com/WilliamDesa/nba-mvp-prediction'
+      repo: 'https://github.com/Will0Wot/nba_project_ML_predict'
     }
   },
   {
     title: 'Legend of Zelda: 2D Escape',
     description:
-      '- Applied Scrum methodology for development, incorporating Object-Oriented Design principles and UML diagrams.\n- Wrote integration and unit tests, identifying and documenting bugs using Jira during the testing phases.\n- Refactored code to resolve hierarchy problems and code smells, improving maintainability and extensibility.',
+      'Top-down 2D maze/puzzle game inspired by The Legend of Zelda. Implemented player movement, collision, enemy behaviors, pickups, and level progression; documented the design with UML and applied OOP patterns. Wrote unit and integration tests and managed tasks/bugs in Jira to deliver a stable, polished build.',
     tags: ['C++', 'Maven', 'Apache', 'Jira'],
-    focus: ['ml'],
+    focus: ['se'],
     links: {
       repo: 'https://github.com/Will0Wot/Maze_Game'
     }
