@@ -1,48 +1,33 @@
 const projects = [
   {
-    title: 'Clinical Operations Analytics Modernization',
+    title: 'Grocery Trends Analysis Platform',
     description:
-      "Partnered with BC Children's Hospital leadership to unify patient flow, utilization, and staffing insights.",
-    impact:
-      'Cut reporting lag by 30% by orchestrating automated Python ETL jobs and Power BI refresh schedules.',
-    highlights: [
-      'Productionized pandas and SQL Server scripts to ingest 15+ departmental data sources nightly.',
-      'Built drill-down dashboards surfacing census, acuity, and OR throughput with row-level security.',
-      'Facilitated bi-weekly briefings translating analytics into equipment and staffing adjustments.'
-    ],
-    tags: ['Python', 'SQL Server', 'Power BI', 'ETL Automation'],
+      'Combined pandas, SQL, and Power BI to surface demand seasonality and top-selling items, guiding strategic inventory decisions for grocers.',
+    tags: ['Python', 'pandas', 'SQL', 'Power BI', 'Excel'],
     focus: ['analytics'],
-    links: {}
+    links: {
+      repo: 'https://github.com/WilliamDesa/grocery-trends-analysis'
+    }
   },
   {
-    title: 'Langara Predictive Analytics Curriculum',
+    title: 'NBA MVP Prediction Model',
     description:
-      'Designed an applied machine learning toolkit for diploma and continuing studies cohorts.',
-    impact:
-      'Enabled 60+ learners to deliver regression and classification projects with reproducible notebooks.',
-    highlights: [
-      'Created labs that introduce pandas, NumPy, Matplotlib, and scikit-learn through real datasets.',
-      'Packaged starter projects covering churn, recommendation, and forecasting scenarios.',
-      'Mentored students through model evaluation, debugging, and communication best practices.'
-    ],
-    tags: ['Python', 'pandas', 'NumPy', 'scikit-learn'],
+      'Engineered scikit-learn pipelines and Power BI visualizations to predict MVP candidates using historical box score data and efficiency metrics.',
+    tags: ['Python', 'scikit-learn', 'Power BI', 'Data Visualization'],
+    focus: ['ml', 'analytics'],
+    links: {
+      repo: 'https://github.com/WilliamDesa/nba-mvp-prediction'
+    }
+  },
+  {
+    title: 'Loan Default Probability Modeling',
+    description:
+      'Built classification models in Python and SQL to identify high-risk applicants, informing underwriting strategy with interpretable risk factors.',
+    tags: ['Python', 'SQL', 'scikit-learn', 'Power BI'],
     focus: ['ml'],
-    links: {}
-  },
-  {
-    title: 'WorksBC Device Deployment Command Center',
-    description:
-      'Built a repeatable imaging and rollout framework for provincial employment service centres.',
-    impact:
-      'Reduced workstation turnaround from days to hours with standardized MDT and WDS playbooks.',
-    highlights: [
-      'Scripted deployment checklists and PowerShell automations for laptops, desktops, and kiosks.',
-      'Maintained live asset and repair dashboards to inform lifecycle planning and purchasing.',
-      'Coordinated after-hours cutovers and staff enablement to keep service centres online.'
-    ],
-    tags: ['WDS', 'MDT', 'PowerShell', 'Process Automation'],
-    focus: ['analytics'],
-    links: {}
+    links: {
+      repo: 'https://github.com/WilliamDesa/loan-default-modeling'
+    }
   }
 ];
 
@@ -64,13 +49,6 @@ function createProjectCard(project) {
   const desc = document.createElement('p');
   desc.textContent = project.description;
 
-  let impact;
-  if (project.impact) {
-    impact = document.createElement('p');
-    impact.className = 'project-impact';
-    impact.textContent = project.impact;
-  }
-
   const meta = document.createElement('div');
   meta.className = 'project-meta';
   project.tags.forEach((tag) => {
@@ -82,49 +60,17 @@ function createProjectCard(project) {
 
   const links = document.createElement('div');
   links.className = 'project-links';
-
-  const highlights = document.createElement('ul');
-  highlights.className = 'project-highlights';
-  if (Array.isArray(project.highlights)) {
-    project.highlights.forEach((item) => {
-      const li = document.createElement('li');
-      li.textContent = item;
-      highlights.appendChild(li);
-    });
-  }
-
-  const labelMap = {
-    repo: 'View code',
-    demo: 'Live demo',
-    caseStudy: 'Read case study',
-    writeup: 'Read case study'
-  };
-
-  Object.entries(project.links || {}).forEach(([key, url]) => {
+  Object.entries(project.links).forEach(([key, url]) => {
     if (!url) return;
     const anchor = document.createElement('a');
     anchor.href = url;
     anchor.target = '_blank';
     anchor.rel = 'noreferrer';
-    anchor.textContent = labelMap[key] || 'Learn more';
+    anchor.textContent = key === 'repo' ? 'View code' : key === 'demo' ? 'Live demo' : 'Read paper';
     links.appendChild(anchor);
   });
 
-  card.append(title, desc);
-
-  if (impact) {
-    card.appendChild(impact);
-  }
-
-  if (highlights.childElementCount) {
-    card.appendChild(highlights);
-  }
-
-  card.append(meta);
-
-  if (links.childElementCount) {
-    card.appendChild(links);
-  }
+  card.append(title, desc, meta, links);
   return card;
 }
 

@@ -413,30 +413,11 @@ main {
   line-height: 1.7;
 }
 
-.project-impact {
-  color: var(--text);
-  font-weight: 600;
-}
-
 .project-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin: -0.25rem;
-  margin-top: 0.75rem;
-}
-
-.project-highlights {
-  margin: 0.5rem 0 0;
-  padding-left: 1.25rem;
-  display: grid;
-  gap: 0.35rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-
-.project-highlights li::marker {
-  color: var(--accent);
 }
 
 .tag {
@@ -454,7 +435,6 @@ main {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-top: 0.75rem;
 }
 
 .project-links a {
@@ -525,17 +505,9 @@ main {
   font-weight: 500;
 }
 
-.timeline__list {
-  margin: 1rem 0 0;
-  padding-left: 1.25rem;
+.timeline__content p {
   color: var(--text-muted);
   line-height: 1.7;
-  display: grid;
-  gap: 0.45rem;
-}
-
-.timeline__list li::marker {
-  color: var(--accent);
 }
 
 .education-card {
