@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>William Desa | Data Science Portfolio</title>
+    <meta
+      name="description"
+      content="Data science portfolio showcasing projects, skills, and experience of William Desa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top">
+      <nav class="navbar" aria-label="Primary">
+        <a class="logo" href="#top">William Desa</a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Data Scientist &amp; Analytics Specialist</p>
+          <h1>Turning complex datasets into clear decisions</h1>
+          <p>
+            I combine rigorous statistical modeling, production-grade Python, and stakeholder-focused
+            storytelling to surface the right insights at the right time. From hospital operations to
+            provincial employment services, I help teams automate reporting, unlock predictive
+            capabilities, and act on data with confidence.
+          </p>
+          <div class="hero__contact">
+            <a href="tel:17789262447">778-926-2447</a>
+            <span aria-hidden="true">•</span>
+            <a href="mailto:will@desa.info">will@desa.info</a>
+            <span aria-hidden="true">•</span>
+            <a href="https://www.linkedin.com/in/william-desa" target="_blank" rel="noreferrer"
+              >LinkedIn</a
+            >
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View projects</a>
+            <a class="btn btn--ghost" href="#contact">Let&apos;s collaborate</a>
+          </div>
+        </div>
+        <div class="hero__stats" aria-label="Key outcomes">
+          <article>
+            <h2>30% ↓</h2>
+            <p>Reporting lag cut through automated ETL pipelines at BC Children&apos;s Hospital.</p>
+          </article>
+          <article>
+            <h2>Bi-weekly</h2>
+            <p>Leadership presentations synthesizing healthcare analytics for swift decisions.</p>
+          </article>
+          <article>
+            <h2>Secure rollouts</h2>
+            <p>Standardized imaging, upgrades, and staff training for WorksBC infrastructure.</p>
+          </article>
+        </div>
+      </section>
+    </header>
+
+    <main id="main">
+      <section class="section" id="about">
+        <div class="section__heading">
+          <p class="eyebrow">About</p>
+          <h2>Applied data scientist grounded in practical delivery</h2>
+        </div>
+        <div class="two-column">
+          <p>
+            I am a Bachelor of Science in Data Science candidate at Simon Fraser University focused on
+            statistical learning, machine learning, data mining, and systems design. My experience spans
+            automating hospital analytics, building predictive curricula for college classrooms, and
+            managing large-scale device rollouts for provincial employment services.
+          </p>
+          <p>
+            Whether I am optimizing ETL pipelines, packaging machine learning tutorials, or shipping
+            secure workstation images, I prioritize reliability, documentation, and clear communication
+            so partners can adopt solutions with confidence.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="skills">
+        <div class="section__heading">
+          <p class="eyebrow">Skills</p>
+          <h2>Technical toolkit</h2>
+        </div>
+        <div class="skills-grid" role="list">
+          <article class="skill" role="listitem">
+            <h3>Languages</h3>
+            <p>Python, C/C++, SQL, Go, Vue.js, JavaScript, HTML/CSS, R, Excel</p>
+          </article>
+          <article class="skill" role="listitem">
+            <h3>Frameworks &amp; Libraries</h3>
+            <p>PyTorch, pandas, NumPy, Matplotlib, scikit-learn, TensorFlow</p>
+          </article>
+          <article class="skill" role="listitem">
+            <h3>Data Engineering</h3>
+            <p>Flask, FastAPI, PostgreSQL, SQL Server, ETL automation</p>
+          </article>
+          <article class="skill" role="listitem">
+            <h3>Analytics &amp; BI</h3>
+            <p>Power BI, dashboard design, storytelling with data</p>
+          </article>
+          <article class="skill" role="listitem">
+            <h3>Systems</h3>
+            <p>Windows Deployment Services, MDT, device imaging, endpoint security</p>
+          </article>
+          <article class="skill" role="listitem">
+            <h3>Soft Skills</h3>
+            <p>Stakeholder communication, curriculum design, technical mentorship</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section__heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+          <p>Filter by focus area:</p>
+          <div class="filters" role="group" aria-label="Project filters">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            <button class="filter-btn" data-filter="analytics">Analytics</button>
+          </div>
+        </div>
+        <div class="projects-grid" id="project-list" role="list"></div>
+      </section>
+
+      <section class="section section--alt" id="experience">
+        <div class="section__heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Experience</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>Configuration Technician · WorksBC (Morelenco)</h3>
+              <span>May 2023 — Sept 2025</span>
+              <ul class="timeline__list">
+                <li>Standardized workstation images across 20+ service centres with WDS and MDT.</li>
+                <li>Maintained detailed asset and repair logs to coordinate hardware lifecycle planning.</li>
+                <li>Delivered rapid support during peak hours by triaging tickets and shipping replacements.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>Associate Data Scientist (Python) · Langara College</h3>
+              <span>Aug 2023 — Sept 2024</span>
+              <ul class="timeline__list">
+                <li>Created predictive analytics labs covering pandas, NumPy, Matplotlib, and scikit-learn.</li>
+                <li>Partnered with instructors to weave Python projects into diploma and continuing studies curricula.</li>
+                <li>Supported student capstones with model evaluation templates and debugging sessions.</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content">
+              <h3>Data Science Intern · BC Children&apos;s Hospital</h3>
+              <span>May 2022 — Sept 2022</span>
+              <ul class="timeline__list">
+                <li>Automated ETL pipelines in Python to cut reporting lag for leadership by 30%.</li>
+                <li>Designed Power BI dashboards surfacing patient flow, unit utilization, and wait times.</li>
+                <li>Presented bi-weekly recommendations that informed staffing and equipment allocation.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" id="education">
+        <div class="section__heading">
+          <p class="eyebrow">Education</p>
+          <h2>Simon Fraser University</h2>
+        </div>
+        <div class="education-card">
+          <h3>Bachelor of Science, Data Science</h3>
+          <span>Burnaby, BC · 2020 — Present</span>
+          <p>
+            Coursework in Statistical Learning, Machine Learning, Database Systems, Data Structures and
+            Algorithms, Data Visualization, Regression Analysis, and Linear Algebra.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section__heading">
+          <p class="eyebrow">Contact</p>
+          <h2>Let&apos;s build something together</h2>
+        </div>
+        <div class="contact-card">
+          <p>
+            I am actively seeking data science, machine learning, and analytics opportunities where I
+            can combine technical rigor with clear communication. If you&apos;re exploring predictive
+            modeling, dashboarding, or infrastructure support, I&apos;d love to connect.
+          </p>
+          <ul class="contact-links">
+            <li>
+              <a href="mailto:will@desa.info">will@desa.info</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/william-desa" target="_blank" rel="noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/WilliamDesa" target="_blank" rel="noreferrer">GitHub</a>
+            </li>
+            <li>
+              <a href="tel:17789262447">778-926-2447</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> William Desa. Built with curiosity and care.</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
