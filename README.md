@@ -22,5 +22,5 @@ experience, projects, and technical skills as I pursue data science opportunitie
 - Skills overview, experience timeline, and clear contact paths for recruiters and collaborators.
 - Accessible markup with skip navigation, keyboard-friendly menus, and responsive layouts.
 
-Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/william-desa) or
-[email](mailto:will@desa.info) if you would like to discuss collaboration opportunities.
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/william-desa-058bb826b) or
+[email](mailto:willowot9@gmail.com) if you would like to discuss collaboration opportunities.
