@@ -6,27 +6,27 @@ const projects = [
     tags: ['Python', 'pandas', 'SQL', 'Power BI', 'Excel'],
     focus: ['analytics'],
     links: {
-      repo: 'https://github.com/WilliamDesa/grocery-trends-analysis'
+      repo: 'https://github.com/Will0Wot/Groccery-Price-Analysis-'
     }
   },
   {
     title: 'NBA MVP Prediction Model',
     description:
       'Engineered scikit-learn pipelines and Power BI visualizations to predict MVP candidates using historical box score data and efficiency metrics.',
-    tags: ['Python', 'scikit-learn', 'Power BI', 'Data Visualization'],
+    tags: ['Pandas', 'PyTorch', 'NBA API', 'Scikit-Learn', 'PowerBI', 'Kaggle'],
     focus: ['ml', 'analytics'],
     links: {
       repo: 'https://github.com/WilliamDesa/nba-mvp-prediction'
     }
   },
   {
-    title: 'Loan Default Probability Modeling',
+    title: 'Legend of Zelda: 2D Escape',
     description:
-      'Built classification models in Python and SQL to identify high-risk applicants, informing underwriting strategy with interpretable risk factors.',
-    tags: ['Python', 'SQL', 'scikit-learn', 'Power BI'],
+      '- Applied Scrum methodology for development, incorporating Object-Oriented Design principles and UML diagrams.\n- Wrote integration and unit tests, identifying and documenting bugs using Jira during the testing phases.\n- Refactored code to resolve hierarchy problems and code smells, improving maintainability and extensibility.',
+    tags: ['C++', 'Maven', 'Apache', 'Jira'],
     focus: ['ml'],
     links: {
-      repo: 'https://github.com/WilliamDesa/loan-default-modeling'
+      repo: 'https://github.com/Will0Wot/Maze_Game'
     }
   }
 ];
